@@ -1,0 +1,172 @@
+<!DOCTYPE HTML> 
+<html> 
+  
+<head> 
+    <title> 
+       First,Second,Third. 
+    </title> 
+    <style> 
+     #Lists{
+           
+           text-align: center;
+           display:flex
+       }
+       #First,#Second,#Third{
+           
+           margin: 1rem;
+            border: solid 1px black;
+            width: 300px;
+            height:600px
+           
+       }
+      
+      
+        #Moe { 
+            border: solid 1px black;
+            background: green; 
+            height: 100px; 
+            width: 200px; 
+            margin: 0 auto; 
+            color: white; 
+            padding :1 rem;
+        } 
+        #Larry { 
+            position:relative;
+            border: solid 1px black;
+            background: green; 
+            height: 100px; 
+            width: 200px; 
+            margin: 0 auto; 
+            color: white; 
+            padding :1 rem;
+        } 
+        #Curly{ 
+            position:static;
+            border: solid 1px black;
+            background: green; 
+            height: 100px; 
+            width: 200px; 
+            margin: 0 auto; 
+            color: white; 
+            padding :1 rem;
+        } 
+        #Lucy { 
+            position:static;
+            border: solid 1px black;
+            background: green; 
+            height: 100px; 
+            width: 200px; 
+            margin: 0 auto; 
+            color: white; 
+            padding :1 rem;
+        } 
+       
+        #Moe:active{
+            background-color:red
+        }
+        #Larry:active{
+            background-color:red
+        }
+        #Curly:active{
+            background-color:red
+        }
+        #Lucy:focus{
+            background-color:red
+        }
+    </style> 
+</head> 
+  
+<body style="text-align:center;" id="body"> 
+    <h1 >   
+            Acme First,Second,Third 
+        </h1> 
+   <div id="Lists">
+       <div id='First'>
+           <h1>First</h1>
+           <button onClick="Right1()"> 
+            right
+        </button> 
+        <button onClick="Left1()"> 
+            left 
+        </button> 
+           <div id='names'>
+               <div id='Moe'>Moe</div>
+               <div id='Larry'>Larry</div>
+               <div id='Curly'>Curly</div>
+               <div id='Lucy'>Lucy</div>
+           </div>
+       </div>
+       <div id='Second'>
+           <h1>Second</h1>
+           <button onClick="Right2()"> 
+            right
+        </button> 
+        <button onClick="Left2()"> 
+            left 
+        </button> 
+       </div>
+       <div id='Third'>
+           <h1>Third</h1>
+           <button onClick="Right3()"> 
+            right
+        </button> 
+        <button onClick="Left3()"> 
+            left 
+        </button> 
+       </div>
+   </div>
+   
+    <br> 
+    
+  
+    <script> 
+      
+  
+        function Right1() { 
+            let x = 400;
+            
+            let el = document.getElementById('Moe'); 
+            el.style.position = 'absolute'; 
+            el.style.left = x + 'px'; 
+            
+
+            
+            
+         
+        } 
+     
+
+        function Right2() { 
+            let x = 750;
+            
+            let el = document.getElementById('Moe'); 
+            el.style.position = 'absolute'; 
+            el.style.left = x + 'px'; 
+            
+
+            
+            
+         
+        } 
+        function Left2() { 
+            let x = 70; 
+            
+            let el = document.getElementById('names'); 
+            el.style.position = "absolute"; 
+            el.style.left = x + 'px'; 
+            
+        }
+
+    
+        function Left3() { 
+            let x = 400; 
+            
+            let el = document.getElementById('names'); 
+            el.style.position = "absolute"; 
+            el.style.left = x + 'px'; 
+           
+        }
+    </script> 
+</body> 
+  
+</html> 
