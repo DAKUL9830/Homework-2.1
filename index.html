@@ -22,6 +22,9 @@
       
       
         #Moe { 
+            position:static;
+            bottom:100;
+            left:10;
             border: solid 1px black;
             background: green; 
             height: 100px; 
@@ -29,9 +32,12 @@
             margin: 0 auto; 
             color: white; 
             padding :1 rem;
+            
         } 
         #Larry { 
-            position:relative;
+            position:static;
+            bottom:70;
+            left:10;
             border: solid 1px black;
             background: green; 
             height: 100px; 
@@ -39,9 +45,12 @@
             margin: 0 auto; 
             color: white; 
             padding :1 rem;
+            
         } 
         #Curly{ 
             position:static;
+            bottom:50;
+            left:10;
             border: solid 1px black;
             background: green; 
             height: 100px; 
@@ -49,9 +58,12 @@
             margin: 0 auto; 
             color: white; 
             padding :1 rem;
+            
         } 
         #Lucy { 
             position:static;
+            bottom:30;
+            left:10;
             border: solid 1px black;
             background: green; 
             height: 100px; 
@@ -59,20 +71,10 @@
             margin: 0 auto; 
             color: white; 
             padding :1 rem;
+            
         } 
        
-        #Moe:active{
-            background-color:red
-        }
-        #Larry:active{
-            background-color:red
-        }
-        #Curly:active{
-            background-color:red
-        }
-        #Lucy:focus{
-            background-color:red
-        }
+     
     </style> 
 </head> 
   
@@ -120,29 +122,88 @@
     
   
     <script> 
+
+let Moe  = document.querySelector("#Moe");
+
+Moe.addEventListener("click",function(){
+	Moe.style.backgroundColor = "green";
+    Moe.style.backgroundColor = "red";
+
+});
+    
+    let Larry  = document.querySelector("#Larry");
+
+Larry.addEventListener("click",function(){
+	Larry.style.backgroundColor = "green";
+    Larry.style.backgroundColor = "red";});
+    
+    let Curly  = document.querySelector("#Curly");
+
+Curly.addEventListener("click",function(){
+	Curly.style.backgroundColor = "green";
+    Curly.style.backgroundColor = "red";});
+    
+    let Lucy  = document.querySelector("#Lucy");
+
+Lucy.addEventListener("click",function(){
+	Lucy.style.backgroundColor = "green";
+	Lucy.style.backgroundColor = "red";});
       
   
         function Right1() { 
             let x = 400;
             
-            let el = document.getElementById('Moe'); 
-            el.style.position = 'absolute'; 
-            el.style.left = x + 'px'; 
-            
+            let Moe = document.getElementById('Moe'); 
+            let Larry = document.getElementById('Larry'); 
+            let Curly = document.getElementById('Curly'); 
+            let Lucy = document.getElementById('Lucy'); 
+            if(Moe.style.backgroundColor === "red"){
+            Moe.style.position = 'absolute'; 
+            Moe.style.left = x + 'px'; 
+            } if(Larry.style.backgroundColor === "red"){
+                Larry.style.position = 'absolute'; 
+                Larry.style.left = x + 'px'; 
+            }
+             if(Curly.style.backgroundColor === "red"){
+                Curly.style.position = 'absolute'; 
+                Curly.style.left = x + 'px'; 
+            }
+             if(Lucy.style.backgroundColor === "red"){
+                Lucy.style.position = 'absolute'; 
+                Lucy.style.left = x + 'px'; }
+                else{
+                return false
+            }
 
-            
-            
-         
-        } 
+            } 
+           
      
 
         function Right2() { 
             let x = 750;
             
-            let el = document.getElementById('Moe'); 
-            el.style.position = 'absolute'; 
-            el.style.left = x + 'px'; 
-            
+            let Moe = document.getElementById('Moe'); 
+            let Larry = document.getElementById('Larry'); 
+            let Curly = document.getElementById('Curly'); 
+            let Lucy = document.getElementById('Lucy'); 
+            if(Moe.style.backgroundColor === "red"){
+            Moe.style.position = 'absolute'; 
+            Moe.style.left = x + 'px'; 
+            } if(Larry.style.backgroundColor === "red"){
+                Larry.style.position = 'absolute'; 
+                Larry.style.left = x + 'px'; 
+            }
+             if(Curly.style.backgroundColor === "red"){
+                Curly.style.position = 'absolute'; 
+                Curly.style.left = x + 'px'; 
+            }
+             if(Lucy.style.backgroundColor === "red"){
+                Lucy.style.position = 'absolute'; 
+                Lucy.style.left = x + 'px'; }
+                else{
+                return false
+            }
+
 
             
             
@@ -151,9 +212,28 @@
         function Left2() { 
             let x = 70; 
             
-            let el = document.getElementById('names'); 
-            el.style.position = "absolute"; 
-            el.style.left = x + 'px'; 
+            let Moe = document.getElementById('Moe'); 
+            let Larry = document.getElementById('Larry'); 
+            let Curly = document.getElementById('Curly'); 
+            let Lucy = document.getElementById('Lucy'); 
+            if(Moe.style.backgroundColor === "red"){
+            Moe.style.position = 'absolute'; 
+            Moe.style.left = x + 'px'; 
+            } if(Larry.style.backgroundColor === "red"){
+                Larry.style.position = 'absolute'; 
+                Larry.style.left = x + 'px'; 
+            }
+             if(Curly.style.backgroundColor === "red"){
+                Curly.style.position = 'absolute'; 
+                Curly.style.left = x + 'px'; 
+            }
+             if(Lucy.style.backgroundColor === "red"){
+                Lucy.style.position = 'absolute'; 
+                Lucy.style.left = x + 'px'; }
+                else{
+                return false
+            }
+
             
         }
 
@@ -161,9 +241,28 @@
         function Left3() { 
             let x = 400; 
             
-            let el = document.getElementById('names'); 
-            el.style.position = "absolute"; 
-            el.style.left = x + 'px'; 
+            let Moe = document.getElementById('Moe'); 
+            let Larry = document.getElementById('Larry'); 
+            let Curly = document.getElementById('Curly'); 
+            let Lucy = document.getElementById('Lucy'); 
+            if(Moe.style.backgroundColor === "red"){
+            Moe.style.position = 'absolute'; 
+            Moe.style.left = x + 'px'; 
+            } if(Larry.style.backgroundColor === "red"){
+                Larry.style.position = 'absolute'; 
+                Larry.style.left = x + 'px'; 
+            }
+             if(Curly.style.backgroundColor === "red"){
+                Curly.style.position = 'absolute'; 
+                Curly.style.left = x + 'px'; 
+            }
+             if(Lucy.style.backgroundColor === "red"){
+                Lucy.style.position = 'absolute'; 
+                Lucy.style.left = x + 'px'; }
+                else{
+                return false
+            }
+
            
         }
     </script> 
